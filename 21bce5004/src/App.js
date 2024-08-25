@@ -15,7 +15,7 @@ const App = () => {
                 throw new Error('Invalid input format');
             }
             
-            const result = await axios.post('https://two1bce5004-backend.onrender.com/bfhl', parsedData);
+            const result = await axios.post('https://two1bce5004-backend-1.onrender.com/bfhl', parsedData);
             setResponse(result.data);
         } catch (err) {
             setError('Invalid JSON input or API error');
